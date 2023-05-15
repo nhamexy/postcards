@@ -1,0 +1,1435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<teiCorpus xmlns="http://www.tei-c.org/ns/1.0"> <!-- I copy pasted this from the TEI website, but deleted "version" -->
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Postcards from the Southern Cone: a DCHM project</title>
+         </titleStmt>
+         <publicationStmt>
+            <authority></authority>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>A collection of twenty postcards from Argentina and Uruguay, between 1900 and 1910.</bibl>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <TEI xml:id="C_Abreu_1905"> <!-- postcard n1 -->
+      <teiHeader>
+         <!-- header for first postcard -->
+         <fileDesc>
+            <titleStmt>
+               <title>Postcard to Conrrada Abreu</title>
+            </titleStmt>
+            <publicationStmt>
+               <authority></authority>
+            </publicationStmt>
+            <sourceDesc>
+               <bibl></bibl>
+            </sourceDesc>
+         </fileDesc>
+         <profileDesc>
+            <correspDesc> <!-- Record information about senders and recipients. Not always the same labels, as postcards differ. -->
+               <correspAction type="sent">
+                  <persName>Ricardo A. Abreu</persName>
+                  <placeName>Montevideo, Uruguay</placeName>
+                  <date when="1905-01-01">1 January 1905</date>
+               </correspAction>
+               <correspAction type="received">
+                  <persName>Conrrada E. Abreu</persName>
+                  <placeName>Piedad 8, Montevideo, Uruguay</placeName>
+               </correspAction>
+            </correspDesc>
+         </profileDesc>
+      </teiHeader>
+      <facsimile> <!-- images of postcard, both sides plus the thumbnail for s1 -->
+         <surface xml:id="C_Abreu_1905_s1"> <!-- side 1 image -->
+            <figure>
+               <label>Postcard to Conrrada E. Abreu - Front</label>
+               <figDesc>An image of a woman posing and typewritten message.</figDesc>
+               <graphic xml:id="C_Abreu_1905_s1_full" url="assets/img/postcards/C_Abreu_1905_s1.jpeg"/> <!-- image displayed side by side with stranscription -->
+               <graphic xml:id="TestC_Abreu_1905_s1_thumb" url="assets/img/postcards/C_Abreu_1905_s1_thumb.jpeg"/> <!-- image used for general overview -->
+            </figure>
+         </surface>
+         <surface xml:id="C_Abreu_1905_s2">
+            <figure>
+               <label>Postcard to Conrrada E. Abreu - Back</label>
+               <figDesc>The back of a postcard with the recipient's information</figDesc>
+               <graphic xml:id="C_Abreu_1905_s2_full" url="assets/img/postcards/C_Abreu_1905_s2.jpeg"/> <!-- image displayed side by side with stranscription -->
+            </figure>
+         </surface>
+      </facsimile>
+      <text>
+         <!-- content of first postcard -->
+         <body>
+            <div type="page" facs="#C_Abreu_1905_s1"> <!-- Trascribed text - side 1. When link, in @type, page or postcard/side? -->
+               <salute><persName>Conrrada</persName></salute>
+               <p>
+                  <lb/>Mi <choice><sic>aspiracion</sic><corr>aspiración</corr></choice> <choice><sic>mas</sic><corr>más</corr></choice> gran
+                  <lb break="no"/>de y mi <choice><sic>deceo</sic><corr>deseo</corr></choice> mas ardiente son
+                  <lb/>que el año que hoy empieza sea
+                  <lb/>el precursor de tu <choice><sic>mas</sic><corr>más</corr></choice> comple
+                  <lb break="no"/>ta felicidad y gratas <choice><sic>satifa
+                     <lb break="no"/>ciones</sic><corr>satisfac<lb break="no"/>ciones.</corr></choice>            
+               </p>
+               <closer>               
+                  <dateline><placeName>Montevideo</placeName> <date when="1905-01-01">Enero 1 de 1905</date></dateline>
+                  <lb/><signed><persName>Ricardo A Abreu</persName></signed></closer>
+            </div> 
+            <div type="page" facs="#C_Abreu_1905_s2"> <!-- Transcribed text - side 2 -->
+               <ab> <!-- Took inspiration from https://encoding-correspondence.bbaw.de/v1/addresses.html -->
+                  <address>
+                     <addrLine>Señorita</addrLine>
+                     <addrLine><name><persName>Conrrada E</persName> <surname>Abreu</surname></name></addrLine>
+                     <addrLine>Piedad 8 Ciudad</addrLine></address>
+               </ab>
+            </div> 
+         </body>
+      </text>
+   </TEI>
+   <TEI xml:id="C_Ghione_1905"> <!-- postcard n2 -->
+      <teiHeader> <!-- header for postcard -->
+         <fileDesc>
+            <titleStmt>
+               <title>Postcard to Clementina Ghione</title> <!-- Something like: Postcard to XX -->
+            </titleStmt>
+            <publicationStmt>
+               <authority></authority>
+            </publicationStmt>
+            <sourceDesc>
+               <bibl></bibl>
+            </sourceDesc>
+         </fileDesc>
+         <profileDesc>
+            <correspDesc> <!-- Record information about senders and recipients. Not always the same labels, as postcards differ. -->
+               <correspAction type="sent">
+                  <persName>Clara</persName>
+                  <placeName>Uruguay</placeName>
+                  <date when="1905-11-23">23 November 1905 </date>
+               </correspAction>
+               <correspAction type="received">
+                  <persName>Clementina Ghione</persName>
+                  <placeName>Juan Manuel Blanes 37, Montevideo, Uruguay</placeName>
+               </correspAction>
+            </correspDesc>
+         </profileDesc>
+      </teiHeader>
+      <facsimile> <!-- images of postcard, both sides plus the thumbnail for s1 -->
+         <surface xml:id="C_Ghione_1905_s1"> <!-- side 1 image; need xml:id="name_postcard_s1" -->
+            <figure>
+               <label>Postcard to Clementina Ghione - Front</label> <!-- XX - Front -->
+               <figDesc>An image of an old rural cottage in a golden frame; color and relief; handwritten text. </figDesc>
+               <graphic xml:id="C_Ghione_1905_s1_full" url="assets/img/postcards/C_Ghione_1905_s1.jpeg"/> <!-- _full / needs xsl:id and url / image displayed side by side with transcription -->
+               <graphic xml:id="C_Ghione_1905_s1_thumb" url="assets/img/postcards/C_Ghione_1905_s1_thumb.jpeg"/> <!-- _thumb/ needs xsl:id and url / image used for general overview -->
+            </figure>
+         </surface>
+         <surface xml:id="C_Ghione_1905_s2"> <!-- side 1 image; need xml:id="name_postcard_s2" -->
+            <figure>
+               <label>Postcard to Clementina Ghione - Back</label> <!-- XX - back -->
+               <figDesc>Handwritten text: recipient and address; a stamp fragment.</figDesc>
+               <graphic xml:id="C_Ghione_1905_s2_full" url="assets/img/postcards/C_Ghione_1905_s2.jpeg"/> <!-- _full / needs xsl:id and url / image displayed side by side with transcription -->
+            </figure>
+         </surface>
+      </facsimile>
+      <text>
+         <!-- content of postcard -->
+         <body>
+            <div type="page" facs="#C_Ghione_1905_s1"> <!-- type and facs / Trascribed text - side 1. When link, in @type, page or postcard/side? -->
+               <p>XI-XXIII-1905
+                  Clara
+                  
+                  ¿Clementina que podria yo desearte en
+                  Este dia? Pue lo unico es un millon
+                  De felicidades para tu porvenir.
+               </p>
+            </div> 
+            <div type="page" facs="#C_Ghione_1905_s2"> <!-- type and facs / Transcribed text - side 2 -->
+               <p>Sta Clementina Ghione
+                  Juán M Blanes N° 37
+                  Ciudad
+               </p>
+            </div> 
+         </body>
+      </text>
+   </TEI>
+   <TEI xml:id="D_Corresponsal_1_1906"> <!-- postcard n3-->
+      <teiHeader> <!-- Header for postcard -->
+         <fileDesc>
+            <titleStmt>
+               <title>Postcard to <foreign xml:lang="es" >Distinguido corresponsal</foreign> (1)</title>
+            </titleStmt>
+            <publicationStmt>
+               <p>Publication Information</p>
+            </publicationStmt>
+            <sourceDesc>
+               <p>Information about the source</p>
+            </sourceDesc>
+         </fileDesc>
+         <profileDesc>
+            <correspDesc> <!-- Record information about senders and recipients. Not always the same labels, as postcards differ. -->
+               <correspAction type="sent">
+                  <persName>Micaela Leoner Sierra</persName>
+                  <placeName>Parque Pérez, Argentina</placeName>
+                  <date when="1906-01">Enero 1906</date>
+               </correspAction>
+               <correspAction type="received">
+                  <persName>Unknown person identified as <foreign xml:lang="es">Distinguido corresponsal</foreign></persName>
+                  <placeName>Argentina</placeName>
+               </correspAction>
+            </correspDesc>
+         </profileDesc>
+      </teiHeader>
+      <facsimile> <!-- images of postcard, both sides plus the thumbnail for s1 -->
+         <surface xml:id="D_Corresponsal_1_1906_s1"> <!-- side 1 image; need xml:id="name_postcard_s1" -->
+            <figure>
+               <label>Postcard to <foreign xml:lang="es" >Distinguido corresponsal (1) - Front</foreign></label> <!-- XX - Front -->
+               <figDesc>An image of a plant; color and relief; handrwitten text; one stamp.</figDesc>
+               <graphic xml:id="D_Corresponsal_1_1906_s1_full" url="assets/img/postcards/D_Corresponsal_1_1906_s1.jpeg"/> <!-- _full / needs xsl:id and url / image displayed side by side with transcription -->
+               <graphic xml:id="D_Corresponsal_1_1906_s1_thumb" url="assets/img/postcards/D_Corresponsal_1_1906_s1_thumb.jpeg"/> <!-- _thumb/ needs xsl:id and url / image used for general overview -->
+            </figure>
+         </surface>
+         <surface xml:id="D_Corresponsal_1_1906_s2"> <!-- side 1 image; need xml:id="name_postcard_s2" -->
+            <figure>
+               <label>Postcard to <foreign xml:lang="es" >Distinguido corresponsal (1) - Back</foreign></label> <!-- XX - back -->
+               <figDesc>Handwritten text and sender's signature.</figDesc>
+               <graphic xml:id="D_Corresponsal_1_1906_s2_full" url="assets/img/postcards/D_Corresponsal_1_1906_s2.jpeg"/> <!-- _full / needs xsl:id and url / image displayed side by side with transcription -->
+            </figure>
+         </surface>
+      </facsimile>
+      <text>
+         <!-- content of postcard -->
+         <body>
+            <div type="page" facs="#D_Corresponsal_1_1906_s1"> <!-- type and facs / Trascribed text - side 1. When link, in @type, page or postcard/side? -->
+               <p>
+                  <lg>
+                     <l>Lo más delicioso en una flor</l>
+                     <l>es su perfume y en una mujer</l>
+                     <l>la dulsura de su carácter</l>
+                  </lg>
+                  Micaela Leoner Sierra
+                  Enero 1906
+               </p>
+            </div> 
+            <div type="page" facs="#D_Corresponsal_1_1906_s2"> <!-- type and facs / Transcribed text - side 2 -->
+               <p>Acabo de recibir su linda postal lo que la
+                  contesto inmediatamente – contestaré á 
+                  su pregunta – si he recibido la
+                  última postal de la colección – lo
+                  que creo haberle dado las gracias
+                  en mis anteriores – de Buenos Aires me
+                  la remitieron enseguida á esta 
+                  Le pido me disculpe por que no
+                  le mando belleza – pues no he
+                  podido encontrar en ninguna parte
+                  pero he mandado á pedir á la 
+                  ciudad y en cuando venga le
+                  mandaré – Sin más los saluda
+                  afectuosamente su corresponsal
+                  
+                  Micaela Leoner Sierra
+               </p>
+            </div> 
+         </body>
+      </text>
+   </TEI>
+   <TEI xml:id="D_Corresponsal_2_1906"> <!-- postcard n4-->
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>Postcard to <foreign xml:lang="es">Distinguido Corresponsal</foreign> (2)</title>
+            </titleStmt>
+            <publicationStmt>
+               <p>Publication Information</p>
+            </publicationStmt>
+            <sourceDesc>
+               <p>Information about the source</p>
+            </sourceDesc>
+         </fileDesc>
+         <profileDesc>
+            <correspDesc> <!-- Record information about senders and recipients. Not always the same labels, as postcards differ. -->
+               <correspAction type="sent">
+                  <persName>Micaela Leoner Sierra</persName>
+                  <placeName>Parque Pérez, Argentina</placeName>
+                  <date when="1906-01">Enero 1906</date>
+               </correspAction>
+               <correspAction type="received">
+                  <persName>Unknown person identified as <foreign xml:lang="es">Distinguido corresponsal</foreign></persName>
+                  <placeName>Argentina</placeName>
+               </correspAction>
+            </correspDesc>
+         </profileDesc>
+      </teiHeader>
+      <facsimile> <!-- images of postcard, both sides plus the thumbnail for s1 -->
+         <surface xml:id="D_Corresponsal_2_1906_s1"> <!-- side 1 image; need xml:id="name_postcard_s1" -->
+            <figure>
+               <label>Postcard to <foreign xml:lang="es">Distinguido corresponsal</foreign> - Front</label> <!-- XX - Front -->
+               <figDesc>A red 1906 seal and a rosehip branches against a golden background; (metallic) color and relief; handwritten text; one stamp. </figDesc>
+               <graphic xml:id="D_Corresponsal_2_1906_s1_full" url="assets/img/postcards/D_Corresponsal_2_1906_s1.jpeg"/> <!-- _full / needs xml:id and url / image displayed side by side with transcription -->
+               <graphic xml:id="D_Corresponsal_2_1906_s1_thumb" url="assets/img/postcards/D_Corresponsal_2_1906_s1_thumb.jpeg"/> <!-- _thumb/ needs xml:id and url / image used for general overview -->
+            </figure>
+         </surface>
+         <surface xml:id="D_Corresponsal_2_1906_s2"> <!-- side 1 image; need xml:id="name_postcard_s2" -->
+            <figure>
+               <label>Postcard to <foreign xml:lang="es">Distinguido corresponsal</foreign> - Back</label> <!-- XX - back -->
+               <figDesc>Handwritten text and sender's signature.</figDesc>
+               <graphic xml:id="D_Corresponsal_2_1906_s2_full" url="assets/img/postcards/D_Corresponsal_2_1906_s2.jpeg"/> <!-- _full / needs xml:id and url / image displayed side by side with transcription -->
+            </figure>
+         </surface>
+      </facsimile>
+      <text>
+         <!-- content of first postcard -->
+         <body>
+            <div type="page" facs="#D_Corresponsal_2_1906_s1"> <!-- type and facs / Trascribed text - side 1. When link, in @type, page or postcard/side? -->
+               <p>Feliz año nuevo le desea su
+                  corresponsal y amiga
+                  Micaela Leoner Sierra
+                  Parque Pérez
+                  Enero 1906
+               </p>
+            </div> 
+            <div type="page" facs="#D_Corresponsal_2_1906_s2"> <!-- type and facs / Transcribed text - side 2 -->
+               <p>Distinguido Corresponsal: -he recibido
+                  su dos lindas postales la que le estoy
+                  muy agradecida, pues me agradan
+                  mucho las colecciones – Estoy otra
+                  vez en Parque Pérez – pues he tenido
+                  que venir antes de lo que pensaba
+                  por excusa de q’ mi hermanita
+                  se encontraba bastante grave – asi
+                  que me dirija otra vez acá la
+                  correspondencia
+                  ¿Quiere decirme que clase de tar-
+                  jetas prefiere? asi yo le puedo
+                  enviar eh? Quisiera que en este
+                  año que empezamos vea realizados
+                  todos sus deseos son los votos q’
+                  hace su corresponsal y amiga
+                  Micaela [Leoner] Sierra
+               </p>
+            </div> 
+         </body>
+      </text>
+   </TEI>
+   <TEI xml:id="D_Corresponsal_3_1906"> <!-- postcard n5-->
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>Postcard to <foreign xml:lang="es">Distinguido corresponsal</foreign>(3)</title>
+            </titleStmt>
+            <publicationStmt>
+               <p>Publication Information</p>
+            </publicationStmt>
+            <sourceDesc>
+               <p>Information about the source</p>
+            </sourceDesc>
+         </fileDesc>
+         <profileDesc>
+            <correspDesc> <!-- Record information about senders and recipients. Not always the same labels, as postcards differ. -->
+               <correspAction type="sent">
+                  <persName>Micaela Leoner Sierra</persName>
+                  <placeName>Parque Pérez, Argentina</placeName>
+                  <date when="1906">1906</date>
+               </correspAction>
+               <correspAction type="received">
+                  <persName>Unknown person identified as <foreign xml:lang="es">Distinguido corresponsal</foreign></persName>
+                  <placeName>Argentina</placeName>
+               </correspAction>
+            </correspDesc>
+         </profileDesc>
+      </teiHeader>
+      <facsimile> <!-- images of postcard, both sides plus the thumbnail for s1 -->
+         <surface xml:id="D_Corresponsal_3_1906_s1"> <!-- side 1 image; need xml:id="name_postcard_s1" -->
+            <figure>
+               <label>Postcard to <foreign xml:lang="es">Distinguido corresponsal (3) - Front</foreign></label> <!-- XX - Front -->
+               <figDesc>An image of a flower basket; color; handwritten text; one stamp.</figDesc>
+               <graphic xml:id="D_Corresponsal_3_1906_s1_full" url="assets/img/postcards/D_Corresponsal_3_1906_s1.jpeg"/> <!-- needs xml:id and url / image displayed side by side with transcription -->
+               <graphic xml:id="D_Corresponsal_3_1906_s1_thumb" url="assets/img/postcards/D_Corresponsal_3_1906_s1_thumb.jpeg"/> <!-- _thumb/ needs xml:id and url / image used for general overview -->
+            </figure>
+         </surface>
+         <surface xml:id="D_Corresponsal_3_1906_s2" > <!-- side 1 image; need xml:id="name_postcard_s2" -->
+            <figure>
+               <label>Postcard to <foreign xml:lang="es">Distinguido corresponsal</foreign> (3) - Back</label> <!-- XX - back -->
+               <figDesc>Handwritten text.</figDesc>
+               <graphic xml:id="D_Corresponsal_3_1906_s2_full" url="assets/img/postcards/D_Corresponsal_3_1906_s2.jpeg"/> <!-- _full / needs xml:id and url / image displayed side by side with transcription -->
+            </figure>
+         </surface>
+      </facsimile>
+      <text>
+         <!-- content of first postcard -->
+         <body>
+            <div type="page" facs="#D_Corresponsal_3_1906_s1"> <!-- type and facs / Trascribed text - side 1. When link, in @type, page or postcard/side? -->
+               <p>yo le dire que en esa fotografia no estoy nada
+                  bien – soy mucho mejor – muchas gracias por
+                  su amabilidad – no creia que Ud. seria 
+                  tan amable con un niña - ¿No piensa man-
+                  darme el suyo? Sin embargo me lo prome-
+                  tio – y lo ”prometido es deuda”, no es
+                  asi? 
+                  Esperando su próxima lo saluda
+                  su corresponsal
+                  Micaela [Leoner] Sierra
+                  Parque Pérez
+               </p>
+            </div> 
+            <div type="page" facs="#D_Corresponsal_3_1906_s2"> <!-- type and facs / Transcribed text - side 2 -->
+               <p>Distinguido corresponsal: He recibido
+                  cuatro postales de la colección que
+                  me está mandando – es muy boni-
+                  ta – gracias – le diré que no pude
+                  contestar á su lindas postales
+                  por que me encontraba lejos
+                  de este pueblo – en una Estancia
+                  de una amiguita – y como no pude
+                  venir á esta – ¿no sabía que Ud
+                  me había mandando – por que me las
+                  manda á [?]? no sabe que estoy
+                  otra vez en P. Perez? Sin embargo le
+                  mandé ha decir – así que le pido
+                  me disculpe no haya contestado a sus
+                  tarjetas – Una amiguita mia le ha
+                  gustado mucho sus por caligrafia
+                  y me ha pedido que le haga firmar
+                  esa postal que le adjunto - ¿quiere
+                  hacerme ese favor? Se los agradeceria –
+                  Me dice Ud. en una postal que no
+                  creia que yo era tan linda – [?]
+               </p>
+            </div> 
+         </body>
+      </text>
+   </TEI>
+   <TEI xml:id="E_Musetti_1_1905"> <!-- postcard n6-->
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>Postcard to Ernesto Musetti (1)</title>
+            </titleStmt>
+            <publicationStmt>
+               <p>Publication Information</p>
+            </publicationStmt>
+            <sourceDesc>
+               <p>Information about the source</p>
+            </sourceDesc>
+         </fileDesc>
+         <profileDesc>
+            <correspDesc> <!-- Record information about senders and recipients. Not always the same labels, as postcards differ. -->
+               <correspAction type="sent">
+                  <persName>Ángel Pinola</persName>
+                  <placeName>Argentina</placeName>
+                  <date when="1905-11-24">24 November 1905</date>
+               </correspAction>
+               <correspAction type="received">
+                  <persName>Ernesto Musetti</persName>
+                  <placeName>Cerrito 138, Buenos Aires, Argentina</placeName>
+               </correspAction>
+            </correspDesc>
+         </profileDesc>
+      </teiHeader>
+      <facsimile> <!-- images of postcard, both sides plus the thumbnail for s1 -->
+         <surface xml:id="E_Musetti_1_1905_s1"> <!-- side 1 image; need xml:id="name_postcard_s1" -->
+            <figure>
+               <label>Postcard to Ernesto Musetti (1) - Front</label> <!-- XX - Front -->
+               <figDesc>A rural landscape, including two horses and a farmer; color; handwritten text; two stamps.</figDesc>
+               <graphic xml:id="E_Musetti_1_1905_s1_full" url="assets/img/postcards/E_Musetti_1_1905_s1.jpeg"/> <!-- _full / needs xml:id and url / image displayed side by side with transcription -->
+               <graphic xml:id="E_Musetti_1_1905_s1_thumb" url="assets/img/postcards/E_Musetti_1_1905_s1_thumb.jpeg"/> <!-- _thumb/ needs xml:id and url / image used for general overview -->
+            </figure>
+         </surface>
+         <surface xml:id="E_Musetti_1_1905_s2"> <!-- side 1 image; need xml:id="name_postcard_s2" -->
+            <figure>
+               <label>Postcard to Ernesto Musetti (1) - Back</label> <!-- XX - back -->
+               <figDesc>Handwritten text: recipient and address.</figDesc>
+               <graphic xml:id="E_Musetti_1_1905_s2_full" url="assets/img/postcards/E_Musetti_1_1905_s2.jpeg"/> <!-- _full / needs xml:id and url / image displayed side by side with transcription -->
+            </figure>
+         </surface>
+      </facsimile>
+      <text>
+         <!-- content of first postcard -->
+         <body>
+            <div type="page" facs="#E_Musetti_1_1905_s1"> <!-- type and facs / Trascribed text - side 1. When link, in @type, page or postcard/side? -->
+               <p>El crepúsculo es
+                  el saludo postrer
+                  del dia que huye.
+                  Angel Pinola
+                  24/11/905
+               </p>
+            </div> 
+            <div type="page" facs="#E_Musetti_1_1905_s2"> <!-- type and facs / Transcribed text - side 2 -->
+               <p>Sr
+                  Ernesto Musetti
+                  Cerrito 138
+                  Ciudad
+               </p>
+            </div> 
+         </body>
+      </text>
+   </TEI>
+   <TEI xml:id="E_Musetti_2_1906"> <!-- postcard n7-->
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>Postcard to Ernesto Musetti (2)</title>
+            </titleStmt>
+            <publicationStmt>
+               <p>Publication Information</p>
+            </publicationStmt>
+            <sourceDesc>
+               <p>Information about the source</p>
+            </sourceDesc>
+         </fileDesc>
+         <profileDesc>
+            <correspDesc> <!-- Record information about senders and recipients. Not always the same labels, as postcards differ. -->
+               <correspAction type="sent">
+                  <persName>María Botti</persName>
+                  <placeName>Argentina</placeName>
+                  <date when="1906-04-14" >14 April 1906</date>
+               </correspAction>
+               <correspAction type="received">
+                  <persName>Ernesto Musetti</persName>
+                  <placeName>Argentina</placeName>
+               </correspAction>
+            </correspDesc>
+         </profileDesc>
+      </teiHeader>
+      <facsimile> <!-- images of postcard, both sides plus the thumbnail for s1 -->
+         <surface xml:id="E_Musetti_2_1906_s1"> <!-- side 1 image; need xml:id="name_postcard_s1" -->
+            <figure>
+               <label>Postcard to Ernesto Musetti (2) - Front</label> <!-- XX - Front -->
+               <figDesc>Maritime motif, sailboats in the horizon; (metallic) colors and relief; handwritten text; one stamp. </figDesc>
+               <graphic xml:id="E_Musetti_2_1906_s1_full" url="assets/img/postcards/E_Musetti_2_1906_s1.jpeg"/> <!-- _full / needs xml:id and url / image displayed side by side with transcription -->
+               <graphic xml:id="E_Musetti_2_1906_s1_thumb" url="assets/img/postcards/E_Musetti_2_1906_s1_thumb.jpeg"/> <!-- _thumb/ needs xml:id and url / image used for general overview -->
+            </figure>
+         </surface>
+         <surface xml:id="E_Musetti_2_1906_s2"> <!-- side 1 image; need xml:id="name_postcard_s2" -->
+            <figure>
+               <label>Postcard to Ernesto Musetti (2) - Back</label> <!-- XX - back -->
+               <figDesc>Handwritten text: recipient and address.</figDesc>
+               <graphic xml:id="Ernesto_Musetti_2_s2_full" url="assets/img/postcards/E_Musetti_2_1906_s2.jpeg"/> <!-- _full / needs xml:id and url / image displayed side by side with transcription -->
+            </figure>
+         </surface>
+      </facsimile>
+      <text>
+         <!-- content of first postcard -->
+         <body>
+            <div type="page" facs="#E_Musetti_2_1906_s1"> <!-- type and facs / Trascribed text - side 1. When link, in @type, page or postcard/side? -->
+               <p>En las olas del pesar
+                  Surje siempre en lontananza
+                  La imagen de la esperanza
+                  Como una vela en el mar.
+                  María Botti
+               </p>
+            </div> 
+            <div type="page" facs="#E_Musetti_2_1906_s2"> <!-- type and facs / Transcribed text - side 2 -->
+               <p>Señor 
+                  Ernesto Musetti
+                  Cerrito 138
+                  Ciudad
+               </p>
+            </div> 
+         </body>
+      </text>
+   </TEI>
+   <TEI xml:id="E_Musetti_3_1906"> <!-- postcard n8 -->
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>Postcard to Ernesto Musetti (3)</title>
+            </titleStmt>
+            <publicationStmt>
+               <p>Publication Information</p>
+            </publicationStmt>
+            <sourceDesc>
+               <p>Information about the source</p>
+            </sourceDesc>
+         </fileDesc>
+         <profileDesc>
+            <correspDesc> <!-- Record information about senders and recipients. Not always the same labels, as postcards differ. -->
+               <correspAction type="sent">
+                  <persName>E. Musetti</persName>
+                  <placeName>Unknown</placeName>
+                  <date when="1906-01">January 1906</date>
+               </correspAction>
+               <correspAction type="received">
+                  <persName>Ernesto Musetti</persName>
+                  <placeName>Cerrito 138, Buenos Aires, Argentina</placeName>
+               </correspAction>
+            </correspDesc>
+         </profileDesc>
+      </teiHeader>
+      <facsimile> <!-- images of postcard, both sides plus the thumbnail for s1 -->
+         <surface xml:id="E_Musetti_3_1906_s1"> <!-- side 1 image; need xml:id="name_postcard_s1" -->
+            <figure>
+               <label>Postcard to Ernesto Musetti (3) - Front</label> <!-- XX - Front -->
+               <figDesc>Coastal landscape: Torquay Natural Arch; color; handwritten text; one stamp.</figDesc>
+               <graphic xml:id="E_Musetti_3_1906_s1_full" url="assets/img/postcards/E_Musetti_3_1906_s1.jpeg"/> <!-- _full / needs xml:id and url / image displayed side by side with transcription -->
+               <graphic xml:id="E_Musetti_3_1906_s1_thumb" url="assets/img/postcards/E_Musetti_3_1906_s1_thumb.jpeg"/> <!-- _thumb/ needs xml:id and url / image used for general overview -->
+            </figure>
+         </surface>
+         <surface xml:id="E_Musetti_3_1906_s2"> <!-- side 1 image; need xml:id="name_postcard_s2" -->
+            <figure>
+               <label>Postcard to Ernesto Musetti (3) - Back</label> <!-- XX - back -->
+               <figDesc>Handwritten text: recipient and address.</figDesc>
+               <graphic xml:id="E_Musetti_3_1906_s2_full" url="assets/img/postcards/E_Musetti_3_1906_s2.jpeg"/> <!-- _full / needs xml:id and url / image displayed side by side with transcription -->
+            </figure>
+         </surface>
+      </facsimile>
+      <text>
+         <!-- content of first postcard -->
+         <body>
+            <div type="page" facs="#E_Musetti_3_1906_s1"> <!-- type and facs / Trascribed text - side 1. When link, in @type, page or postcard/side? -->
+               <p>La naturaleza se vanagloria
+                  al contemplar sus inimitables
+                  obras y se manifiesta orgullosa
+                  con los artistas, puesto que
+                  ninguno de ellos llegará jamás
+                  a igualarla.
+                  E Musetti
+                  Marzo 1906 
+               </p>
+            </div> 
+            <div type="page" facs="#E_Musetti_3_1906_s2"> <!-- type and facs / Transcribed text - side 2 -->
+               <p>Señor
+                  Ernesto Musetti
+                  Cerrito 138
+                  Bs Aires
+               </p>
+            </div> 
+         </body>
+      </text>
+   </TEI>
+   <TEI xml:id="E_Musetti_4_1904"> <!-- postcard n9 -->
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>Postcard to Ernesto Musetti (4)</title>
+            </titleStmt>
+            <publicationStmt>
+               <p>Publication Information</p>
+            </publicationStmt>
+            <sourceDesc>
+               <p>Information about the source</p>
+            </sourceDesc>
+         </fileDesc>
+         <profileDesc>
+            <correspDesc> <!-- Record information about senders and recipients. Not always the same labels, as postcards differ. -->
+               <correspAction type="sent">
+                  <persName>Claudina Monlezun</persName>
+                  <placeName>Argentina</placeName>
+                  <date>24 November 1904</date>
+               </correspAction>
+               <correspAction type="received">
+                  <persName>Ernesto Musetti</persName>
+                  <placeName>Buenos Aires, Argentina</placeName>
+               </correspAction>
+            </correspDesc>
+         </profileDesc>
+      </teiHeader>
+      <facsimile> <!-- images of postcard, both sides plus the thumbnail for s1 -->
+         <surface xml:id="E_Musetti_4_1904_s1"> <!-- side 1 image; need xml:id="name_postcard_s1" -->
+            <figure>
+               <label>Postcard to Ernesto Musetti (4) - Front</label> <!-- XX - Front -->
+               <figDesc>Maritime motif, ships in the ocean; color; handwritten text; one stamp.</figDesc>
+               <graphic xml:id="E_Musetti_4_1904_s1_full" url="assets/img/postcards/E_Musetti_4_1904_s1.jpeg"/> <!-- _full / needs xml:id and url / image displayed side by side with transcription -->
+               <graphic xml:id="E_Musetti_4_1904_s1_thumb" url="assets/img/postcards/E_Musetti_4_1904_s1_thumb.jpeg"/> <!-- _thumb/ needs xml:id and url / image used for general overview -->
+            </figure>
+         </surface>
+         <surface xml:id="E_Musetti_4_1904_s2"> <!-- side 1 image; need xml:id="name_postcard_s2" -->
+            <figure>
+               <label>Postcarrd to Ernesto Musetti (4)</label> <!-- XX - back -->
+               <figDesc>Handwritten text: recipient and address.</figDesc>
+               <graphic xml:id="E_Musetti_4_1904_s2_full" url="assets/img/postcards/E_Musetti_4_1904_s2.jpeg"></graphic> <!-- _full / needs xml:id and url / image displayed side by side with transcription -->
+            </figure>
+         </surface>
+      </facsimile>
+      <text>
+         <!-- content of first postcard -->
+         <body>
+            <div type="page" facs="#E_Musetti_4_1904_s1"> <!-- type and facs / Trascribed text - side 1. When link, in @type, page or postcard/side? -->
+               <p>El hombre se
+                  balancea en
+                  las ilusiones de
+                  la vida como
+                  la frágil
+                  barquilla sobre 
+                  las olas del mar.
+                  Su corresponsal
+                  Claudina Monlezun
+                  Noviembre 24, 1904
+               </p>
+            </div> 
+            <div type="page" facs="#E_Musetti_4_1904_s2"> <!-- type and facs / Transcribed text - side 2 -->
+               <p>Señor Ernesto Musetti
+                  Buenos. Aires 
+               </p>
+            </div> 
+         </body>
+      </text>
+   </TEI>
+   <TEI xml:id="M_Quintela_1_1906"> <!-- postcard n10-->
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>Postcard to María Quintela (1)</title>
+            </titleStmt>
+            <publicationStmt>
+               <p>Publication Information</p>
+            </publicationStmt>
+            <sourceDesc>
+               <p>Information about the source</p>
+            </sourceDesc>
+         </fileDesc>
+         <profileDesc>
+            <correspDesc> <!-- Record information about senders and recipients. Not always the same labels, as postcards differ. -->
+               <correspAction type="sent">
+                  <persName>Julia Margarita Menchaca</persName>
+                  <placeName>Treinta y Tres, Uruguay</placeName>
+                  <date when="1906-12-16">16 December 1906</date>
+               </correspAction>
+               <correspAction type="received">
+                  <persName>María Quintela</persName>
+                  <placeName>Olimar, Uruguay</placeName>
+               </correspAction>
+            </correspDesc>
+         </profileDesc>
+      </teiHeader>
+      <facsimile> <!-- images of postcard, both sides plus the thumbnail for s1 -->
+         <surface xml:id="M_Quintela_1_1906_s1"> <!-- side 1 image; need xml:id="name_postcard_s1" -->
+            <figure>
+               <label>Postcard to María Quintela (1) - Front</label> <!-- XX - Front -->
+               <figDesc>Two flowers, one with the face of a child (pasted); color (hand-coloring) and relief; handwritten text.</figDesc>
+               <graphic xml:id="M_Quintela_1_1906_s1_full" url="assets/img/postcards/M_Quintela_1_1906_s1.jpeg"/> <!-- _full / needs xml:id and url / image displayed side by side with transcription -->
+               <graphic xml:id="M_Quintela_1_1906_s1_thumb" url="assets/img/postcards/M_Quintela_1_1906_s1_thumb.jpeg"/> <!-- _thumb/ needs xml:id and url / image used for general overview -->
+            </figure>
+         </surface>
+         <surface xml:id="M_Quintela_1_1906_s2"> <!-- side 1 image; need xml:id="name_postcard_s2" -->
+            <figure>
+               <label>Postcard to María Quintela (1) - Back</label> <!-- XX - back -->
+               <figDesc>Handwritten text: recipient and address.</figDesc>
+               <graphic xml:id="M_Quintela_1_1906_s2_full" url="assets/img/postcards/M_Quintela_1_1906_s2.jpeg"/> <!-- _full / needs xml:id and url / image displayed side by side with transcription -->
+            </figure>
+         </surface>
+      </facsimile>
+      <text>
+         <!-- content of first postcard -->
+         <body>
+            <div type="page" facs="#M_Quintela_1_1906_s1"> <!-- type and facs / Trascribed text - side 1. When link, in @type, page or postcard/side? -->
+               <p>Maria
+                  Quien te saluda y
+                  hase votos por tu felicidad
+                  y dicha es esta amiga
+                  que mucho te quiere.
+                  !Adiós!
+                  Julia Menchaca
+                  
+                  Treinta y Tres
+                  12 = 16 – 1906
+               </p>
+            </div> 
+            <div type="page" facs="#M_Quintela_1_1906_s2"> <!-- type and facs / Transcribed text - side 2 -->
+               <p>Señorita
+                  Maria Quintela
+                  Olimar
+               </p>
+            </div> 
+         </body>
+      </text>
+   </TEI>
+   <TEI xml:id="M_Quintela_2_1907"> <!-- postcard n11-->
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>Postcard to María Quintela (2)</title>
+            </titleStmt>
+            <publicationStmt>
+               <p>Publication Information</p>
+            </publicationStmt>
+            <sourceDesc>
+               <p>Information about the source</p>
+            </sourceDesc>
+         </fileDesc>
+         <profileDesc>
+            <correspDesc> <!-- Record information about senders and recipients. Not always the same labels, as postcards differ. -->
+               <correspAction type="sent">
+                  <persName>Josefita</persName>
+                  <placeName>Treinta y Tres, Uruguay</placeName>
+                  <date>4 October 1907</date>
+               </correspAction>
+               <correspAction type="received">
+                  <persName>María Quintela</persName>
+                  <placeName>Uruguay</placeName>
+               </correspAction>
+            </correspDesc>
+         </profileDesc>
+      </teiHeader>
+      <facsimile> <!-- images of postcard, both sides plus the thumbnail for s1 -->
+         <surface xml:id="M_Quintela_2_1907_s1"> <!-- side 1 image; need xml:id="name_postcard_s1" -->
+            <figure>
+               <label>Postcard to María Quintela (2) - Front</label> <!-- XX - Front -->
+               <figDesc>A girl hugging a cat; color (hand-coloring); handwritten text.</figDesc>
+               <graphic xml:id="M_Quintela_2_1907_s1_full" url="assets/img/postcards/M_Quintela_2_1907_s1.jpeg"/> <!-- _full / needs xml:id and url / image displayed side by side with transcription -->
+               <graphic xml:id="M_Quintela_2_1907_s1_thumb" url="assets/img/postcards/M_Quintela_2_1907_s1_thumb.jpeg"/> <!-- _thumb/ needs xml:id and url / image used for general overview -->
+            </figure>
+         </surface>
+         <surface xml:id="M_Quintela_2_1907_s2"> <!-- side 2 image; need xml:id="name_postcard_s2" -->
+            <figure>
+               <label>Postcard to María Quintela (2) - Back</label> <!-- XX - back -->
+               <figDesc>Handwritten text: recipient.</figDesc>
+               <graphic xml:id="M_Quintela_2_1907_s2_full" url="assets/img/postcards/M_Quintela_2_1907_s2.jpeg"/> <!-- _full / needs xml:id and url / image displayed side by side with transcription -->
+            </figure>
+         </surface>
+      </facsimile>
+      <text>
+         <!-- content of first postcard -->
+         <body>
+            <div type="page" facs="#M_Quintela_2_1907_s1"> <!-- type and facs / Trascribed text - side 1. When link, in @type, page or postcard/side? -->
+               <p>33” 4 – 10 – 1907
+                  
+                  Como estrecha esta preciosa
+                  niña su gatito quiciera te-
+                  ner la dicha de estrechar-
+                  te a ti mi Maruja que-
+                  rida, entre mis
+                  brazos.
+                  
+                  Esperamoste pronto.
+                  Tu prima
+                  Josefita
+               </p>
+            </div> 
+            <div type="page" facs="#M_Quintela_2_1907_s2"> <!-- type and facs / Transcribed text - side 2 -->
+               <p>Sta
+                  Maruja J Quintela
+               </p>
+            </div> 
+         </body>
+      </text>
+   </TEI>
+   <TEI xml:id="M_Quintela_3_1907"> <!-- postcard n12 -->
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>Postcard to María Quintela (3)</title>
+            </titleStmt>
+            <publicationStmt>
+               <p>Publication Information</p>
+            </publicationStmt>
+            <sourceDesc>
+               <p>Information about the source</p>
+            </sourceDesc>
+         </fileDesc>
+         <profileDesc>
+            <correspDesc> <!-- Record information about senders and recipients. Not always the same labels, as postcards differ. -->
+               <correspAction type="sent">
+                  <persName>Diosma Silvera</persName>
+                  <placeName>Treinta y Tres, Uruguay</placeName>
+                  <date when="1907-11-13">13 November 1907</date>
+               </correspAction>
+               <correspAction type="received">
+                  <persName>María Quintela</persName>
+                  <placeName>Treinta y Tres, Uruguay</placeName>
+               </correspAction>
+            </correspDesc>
+         </profileDesc>
+      </teiHeader>
+      <facsimile> <!-- images of postcard, both sides plus the thumbnail for s1 -->
+         <surface xml:id="M_Quintela_3_1907_s1"> <!-- side 1 image; need xml:id="name_postcard_s1" -->
+            <figure>
+               <label>Postcard to María Quintela (3) - Front</label> <!-- XX - Front -->
+               <figDesc>A bride and a groom looking at each other; sepia; handwritten and printed text. </figDesc>
+               <graphic xml:id="M_Quintela_3_1907_s1_full" url="assets/img/postcards/M_Quintela_3_1907_s1.jpeg"/> <!-- _full / needs xml:id and url / image displayed side by side with transcription -->
+               <graphic xml:id="M_Quintela_3_1907_s1_thumb" url="assets/img/postcards/M_Quintela_3_1907_s1_thumb.jpeg"/> <!-- _thumb/ needs xml:id and url / image used for general overview -->
+            </figure>
+         </surface>
+         <surface xml:id="M_Quintela_3_1907_s2"> <!-- side 1 image; need xml:id="name_postcard_s2" -->
+            <figure>
+               <label>Postcard to María Quintela (3) - Back</label> <!-- XX - back -->
+               <figDesc>Handwritten text: recipient and address.</figDesc>
+               <graphic xml:id="M_Quintela_3_1907_s2_full" url="assets/img/postcards/M_Quintela_3_1907_s2.jpeg"/> <!-- _full / needs xml:id and url / image displayed side by side with transcription -->
+            </figure>
+         </surface>
+      </facsimile>
+      <text>
+         <!-- content of first postcard -->
+         <body>
+            <div type="page" facs="#M_Quintela_3_1907_s1"> <!-- type and facs / Trascribed text - side 1. When link, in @type, page or postcard/side? -->
+               <p>“33 11 – 13 de 1907
+                  
+                  Deseo que tu como la figura
+                  que presenta esta postal ten-
+                  gas quién te diga lo mismo
+                  que en esta
+                  Diosma Silvera
+                  
+                  *Printed text: Para mi que momento encantador, leo en tus ojos el mas ardiente amor*
+               </p>
+            </div> 
+            <div type="page" facs="#M_Quintela_3_1907_s2"> <!-- type and facs / Transcribed text - side 2 -->
+               <p>Señorita
+                  Maria Quintela
+                  Treinta y Tres
+               </p>
+            </div> 
+         </body>
+      </text>
+   </TEI>
+   <TEI xml:id="M_Quintela_4_1909"> <!-- postcard n13-->
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>Postcard to María Quintela (4)</title>
+            </titleStmt>
+            <publicationStmt>
+               <p>Publication Information</p>
+            </publicationStmt>
+            <sourceDesc>
+               <p>Information about the source</p>
+            </sourceDesc>
+         </fileDesc>
+         <profileDesc>
+            <correspDesc> <!-- Record information about senders and recipients. Not always the same labels, as postcards differ. -->
+               <correspAction type="sent">
+                  <persName>Julia Margarita Menchaca</persName>
+                  <placeName>Uruguay</placeName>
+                  <date when="1909-12-28">28 December 1909</date>
+               </correspAction>
+               <correspAction type="received">
+                  <persName>María Quintela</persName>
+                  <placeName>Olimar Grande, Uruguay</placeName>
+               </correspAction>
+            </correspDesc>
+         </profileDesc>
+      </teiHeader>
+      <facsimile> <!-- images of postcard, both sides plus the thumbnail for s1 -->
+         <surface xml:id="M_Quintela_4_1909_s1"> <!-- side 1 image; need xml:id="name_postcard_s1" -->
+            <figure>
+               <label>Postcard to María Quintela (4) - Front</label> <!-- XX - Front -->
+               <figDesc>A couple leaning on a fence; color (hand-coloring); handwritten text.</figDesc>
+               <graphic xml:id="M_Quintela_4_1909_s1_full" url="assets/img/postcards/M_Quintela_4_1909_s1.jpeg"/> <!-- _full / needs xml:id and url / image displayed side by side with transcription -->
+               <graphic xml:id="M_Quintela_4_1909_s1_thumb" url="assets/img/postcards/M_Quintela_4_1909_s1_thumb.jpeg"/> <!-- _thumb/ needs xml:id and url / image used for general overview -->
+            </figure>
+         </surface>
+         <surface xml:id="M_Quintela_4_1909_s2"> <!-- side 1 image; need xml:id="name_postcard_s2" -->
+            <figure>
+               <label>Postcard to María Quintela (4) - Back</label> <!-- XX - back -->
+               <figDesc>Handwritten text: message, recipient and address.</figDesc>
+               <graphic xml:id="M_Quintela_4_1909_s2_full" url="assets/img/postcards/M_Quintela_4_1909_s2.jpeg"/> <!-- _full / needs xml:id and url / image displayed side by side with transcription -->
+            </figure>
+         </surface>
+      </facsimile>
+      <text>
+         <!-- content of first postcard -->
+         <body>
+            <div type="page" facs="#M_Quintela_4_1909_s1"> <!-- type and facs / Trascribed text - side 1. When link, in @type, page or postcard/side? -->
+               <p>En tanto que el amor dura
+                  Toda locura es fineza
+                  Luego que olvido empieza
+                  Toda fineza es locura –
+                  12.28.1909
+               </p>
+            </div> 
+            <div type="page" facs="#M_Quintela_4_1909_s2"> <!-- type and facs / Transcribed text - side 2 -->
+               <p>Que el año que se inicia
+                  sea para tí, portador de
+                  la dicha y felicidad que
+                  te desea quien bien te quiere
+                  Julia Margarita
+                  
+                  Señorita
+                  Maria J. Quintela
+                  Olimar Grande
+               </p>
+            </div> 
+         </body>
+      </text>
+   </TEI>
+   <TEI xml:id="M_SaintHilaire_1904"> <!-- postcard n14-->
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>Postcard to María Saint Hilaire</title>
+            </titleStmt>
+            <publicationStmt>
+               <p>Publication Information</p>
+            </publicationStmt>
+            <sourceDesc>
+               <p>Information about the source</p>
+            </sourceDesc>
+         </fileDesc>
+         <profileDesc>
+            <correspDesc> <!-- Record information about senders and recipients. Not always the same labels, as postcards differ. -->
+               <correspAction type="sent">
+                  <persName>Clotilde</persName>
+                  <placeName>Uruguay</placeName>
+                  <date when="1904-11-08">8 November 1904</date>
+               </correspAction>
+               <correspAction type="received">
+                  <persName>María Saint Hilaire</persName>
+                  <placeName>18 de Julio 503, Montevideo, Uruguay</placeName>
+               </correspAction>
+            </correspDesc>
+         </profileDesc>
+      </teiHeader>
+      <facsimile> <!-- images of postcard, both sides plus the thumbnail for s1 -->
+         <surface xml:id="M_SaintHilaire_1904_s1"> <!-- side 1 image; need xml:id="name_postcard_s1" -->
+            <figure>
+               <label>Postcard to María Saint Hilaire - Front</label> <!-- XX - Front -->
+               <figDesc>A man offering flowers to a woman; color (hand-coloring); handwritten text; part of a stamp.</figDesc>
+               <graphic xml:id="M_SaintHilaire_1904_s1_full" url="assets/img/postcards/M_SaintHilaire_1904_s1.jpeg"/> <!-- _full / needs xml:id and url / image displayed side by side with transcription -->
+               <graphic xml:id="M_SaintHilaire_1904_s1_thumb" url="assets/img/postcards/M_SaintHilaire_1904_s1_thumb.jpeg"/> <!-- _thumb/ needs xml:id and url / image used for general overview -->
+            </figure>
+         </surface>
+         <surface xml:id="M_SaintHilaire_1904_s2"> <!-- side 1 image; need xml:id="name_postcard_s2" -->
+            <figure>
+               <label>Postcard to MAría Saint Hilaire - Back</label> <!-- XX - back -->
+               <figDesc>Handwritten text: recipient and address; part of a stamp.</figDesc>
+               <graphic xml:id="M_SaintHilaire_1904_s2_full" url="assets/img/postcards/M_SaintHilaire_1904_s2.jpeg"/> <!-- _full / needs xml:id and url / image displayed side by side with transcription -->
+            </figure>
+         </surface>
+      </facsimile>
+      <text>
+         <!-- content of first postcard -->
+         <body>
+            <div type="page" facs="#M_SaintHilaire_1904_s1"> <!-- type and facs / Trascribed text - side 1. When link, in @type, page or postcard/side? -->
+               <p>¿Que es la vida sin amor?
+                  Lo que una pena sin llanto
+                  Un ruiseñor sin canto
+                  Y sin perfume una flor
+                  Clotilde
+                  Octubre 8/904
+               </p>
+            </div> 
+            <div type="page" facs="#M_SaintHilaire_1904_s2"> <!-- type and facs / Transcribed text - side 2 -->
+               <p>Impreso
+                  
+                  Señorita Maria Saint Hilaire
+                  18 de Julio 503
+                  Capital
+               </p>
+            </div> 
+         </body>
+      </text>
+   </TEI>
+   <TEI xml:id="M_Vinent_1906"> <!-- postcard n15-->
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>Postcard to Manuela J. Vinent</title>
+            </titleStmt>
+            <publicationStmt>
+               <p>Publication Information</p>
+            </publicationStmt>
+            <sourceDesc>
+               <p>Information about the source</p>
+            </sourceDesc>
+         </fileDesc>
+         <profileDesc>
+            <correspDesc> <!-- Record information about senders and recipients. Not always the same labels, as postcards differ. -->
+               <correspAction type="sent">
+                  <persName>Diamante</persName>
+                  <placeName>Unknown</placeName>
+                  <date when="1906-02-16">16 February 1906</date>
+               </correspAction>
+               <correspAction type="received">
+                  <persName>Manuela J. Vinent</persName>
+                  <placeName>Fray Marcos, Uruguay</placeName>
+               </correspAction>
+            </correspDesc>
+         </profileDesc>
+      </teiHeader>
+      <facsimile> <!-- images of postcard, both sides plus the thumbnail for s1 -->
+         <surface xml:id="M_Vinent_1906_s1"> <!-- side 1 image; need xml:id="name_postcard_s1" -->
+            <figure>
+               <label>Postcard to Manuela J. Vinent - Front</label> <!-- XX - Front -->
+               <figDesc>A picture of two children holding a flower basket; color (hand-coloring); handwritten and printed text.</figDesc>
+               <graphic xml:id="M_Vinent_1906_s1_full" url="assets/img/postcards/M_Vinent_1906_s1.jpeg"/> <!-- _full / needs xml:id and url / image displayed side by side with transcription -->
+               <graphic xml:id="M_Vinent_1906_s1_thumb" url="assets/img/postcards/M_Vinent_1906_s1_thumb.jpeg"/> <!-- _thumb/ needs xml:id and url / image used for general overview -->
+            </figure>
+         </surface>
+         <surface xml:id="M_Vinent_1906_s2"> <!-- side 1 image; need xml:id="name_postcard_s2" -->
+            <figure>
+               <label>Postcard to Manuela Vinent - Back</label> <!-- XX - back -->
+               <figDesc>Handwritten text: message, recipient and address.</figDesc>
+               <graphic xml:id="M_Vinent_1906_s2_full" url="assets/img/postcards/M_Vinent_1906_s2.jpeg"/> <!-- _full / needs xml:id and url / image displayed side by side with transcription -->
+            </figure>
+         </surface>
+      </facsimile>
+      <text>
+         <!-- content of first postcard -->
+         <body>
+            <div type="page" facs="#M_Vinent_1906_s1"> <!-- type and facs / Trascribed text - side 1. When link, in @type, page or postcard/side? -->
+               <p>2-16-1906
+                  
+                  En lo más re-
+                  cóndito de mi
+                  corazon guar-
+                  do su grata
+                  amistad.
+                  Diamante
+               </p>
+            </div> 
+            <div type="page" facs="#M_vinent_1906_s2"> <!-- type and facs / Transcribed text - side 2 -->
+               <p>Agradecemos y
+                  retribuimos afec-
+                  tuosos saludos
+                  Suya
+                  Diamante
+                  
+                  Sta
+                  Manuela J. Vinent
+                  Fray Marcos
+               </p>
+            </div> 
+         </body>
+      </text>
+   </TEI>
+   <TEI xml:id="P_deQuincoces_1_1904"> <!-- postcard n16 -->
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>Postcard to Petrona C. de Quincoces (1)</title>
+            </titleStmt>
+            <publicationStmt>
+               <p>Publication Information</p>
+            </publicationStmt>
+            <sourceDesc>
+               <p>Information about the source</p>
+            </sourceDesc>
+         </fileDesc>
+         <profileDesc>
+            <correspDesc> <!-- Record information about senders and recipients. Not always the same labels, as postcards differ. -->
+               <correspAction type="sent">
+                  <persName>Josefa M. de [C?]</persName>
+                  <placeName>Uruguay</placeName>
+                  <date when="1904-10-05">5 October 1904</date>
+               </correspAction>
+               <correspAction type="received">
+                  <persName>Petrona C. de Quincoces</persName>
+                  <placeName>Uruguay</placeName>
+               </correspAction>
+            </correspDesc>
+         </profileDesc>
+      </teiHeader>
+      <facsimile> <!-- images of postcard, both sides plus the thumbnail for s1 -->
+         <surface xml:id="P_deQuincoces_1_1904_s1"> <!-- side 1 image; need xml:id="name_postcard_s1" -->
+            <figure>
+               <label>Postcard to Petrona C. de Quincoces (1) - Front</label> <!-- XX - Front -->
+               <figDesc>A woman with flowers in her hair and a bowl of fruit; sepia and colored glitter; handwritten text; one stamp.</figDesc>
+               <graphic xml:id="P_deQuincoces_1_1904_s1_full" url="assets/img/postcards/P_deQuincoces_1_1904_s1.jpeg"/> <!-- _full / needs xml:id and url / image displayed side by side with transcription -->
+               <graphic xml:id="P_deQuincoces_1_1904_s1_thumb" url="assets/img/postcards/P_deQuincoces_1_1904_s1_thumb.jpeg"/> <!-- _thumb/ needs xml:id and url / image used for general overview -->
+            </figure>
+         </surface>
+         <surface xml:id="P_deQuincoces_1_1904_s2"> <!-- side 1 image; need xml:id="name_postcard_s2" -->
+            <figure>
+               <label>Postcard to Petrona C. de Quincoces (1) - Back</label> <!-- XX - back -->
+               <figDesc>Handwritten text: recipient and address.</figDesc>
+               <graphic xml:id="P_deQuincoces_1_1904_s2_full" url="assets/img/postcards/P_deQuincoces_1_1904_s2.jpeg"/> <!-- _full / needs xml:id and url / image displayed side by side with transcription -->
+            </figure>
+         </surface>
+      </facsimile>
+      <text>
+         <!-- content of first postcard -->
+         <body>
+            <div type="page" facs="#P_deQuincoces_1_1904_s1"> <!-- type and facs / Trascribed text - side 1. When link, in @type, page or postcard/side? -->
+               <p>Queridisima 
+                  hija
+                  Hoy en tu dia
+                  elevo fervientes votos
+                  al Todopoderoso para que
+                  sus designios hacia ti
+                  sean de imperdurable dicha
+                  y te colme de salud y
+                  vienestar por infinitos años
+                  
+                  Josefa M de [C?]
+                  Octubre
+                  5 de 1094
+               </p>
+            </div> 
+            <div type="page" facs="#P_deQuincoces_1_1904_s2"> <!-- type and facs / Transcribed text - side 2 -->
+               <p>Señora
+                  Petrona C de Quincoces
+                  Rivera 50
+                  C V
+               </p>
+            </div> 
+         </body>
+      </text>
+   </TEI>
+   <TEI xml:id="P_deQuincoces_2_1904"> <!-- postcard n17-->
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>Postcard to Petrona C. de Quincoces (2)</title>
+            </titleStmt>
+            <publicationStmt>
+               <p>Publication Information</p>
+            </publicationStmt>
+            <sourceDesc>
+               <p>Information about the source</p>
+            </sourceDesc>
+         </fileDesc>
+         <profileDesc>
+            <correspDesc> <!-- Record information about senders and recipients. Not always the same labels, as postcards differ. -->
+               <correspAction type="sent">
+                  <persName>Carolina</persName>
+                  <placeName>Montevideo, Uruguay</placeName>
+                  <date when="1904-06-10">10 June 1904</date>
+               </correspAction>
+               <correspAction type="received">
+                  <persName>Petrona C. de Quincoces</persName>
+                  <placeName>Rivera 50, Montevideo, Uruguay</placeName>
+               </correspAction>
+            </correspDesc>
+         </profileDesc>
+      </teiHeader>
+      <facsimile> <!-- images of postcard, both sides plus the thumbnail for s1 -->
+         <surface xml:id="P_deQuincoces_2_1904_s1"> <!-- side 1 image; need xml:id="name_postcard_s1" -->
+            <figure>
+               <label>Postcard to Petrona P. de Quincoces (2) - Front</label> <!-- XX - Front -->
+               <figDesc>Flowers; color; handwritten text.</figDesc>
+               <graphic xml:id="P_deQuincoces_2_1904_s1_full" url="assets/img/postcards/P_deQuincoces_2_1904_s1.jpeg"/> <!-- _full / needs xml:id and url / image displayed side by side with transcription -->
+               <graphic xml:id="P_deQuincocers_2_1904_s1_thumb" url="assets/img/postcards/P_deQuincoces_2_1904_s1_thumb.jpeg"/> <!-- _thumb/ needs xml:id and url / image used for general overview -->
+            </figure>
+         </surface>
+         <surface xml:id="P_deQuincoces_2_1904_s2"> <!-- side 1 image; need xml:id="name_postcard_s2" -->
+            <figure>
+               <label>Postcard to Petrona C. de Quincoces (2) - Back</label> <!-- XX - back -->
+               <figDesc>Handwritten text: recipient and address; two stamps.</figDesc>
+               <graphic xml:id="P_deQuincoces_2_1904_s2_full" url="assets/img/postcards/P_deQuincoces_2_1904_s2.jpeg"/> <!-- _full / needs xml:id and url / image displayed side by side with transcription -->
+            </figure>
+         </surface>
+      </facsimile>
+      <text>
+         <!-- content of first postcard -->
+         <body>
+            <div type="page" facs="#P_deQuincoces_2_1904_s1"> <!-- type and facs / Trascribed text - side 1. When link, in @type, page or postcard/side? -->
+               <p>La virtud y la modestia realza la belleza de la
+                  mujer.
+                  Tu ahijada Carolina
+                  Montevideo 10 – 6/904
+               </p>
+            </div> 
+            <div type="page" facs="#P_deQuincoces_2_1904_s2"> <!-- type and facs / Transcribed text - side 2 -->
+               <p>Sra Petrona C. de Quincoces
+                  Calle Rivera N°50
+                  Ciudad
+               </p>
+            </div> 
+         </body>
+      </text>
+   </TEI>
+   <TEI xml:id="P_deQuincoces_3_1908"> <!-- postcard n18 -->
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>Postcard to Petrona C. de Quincoces (3)</title>
+            </titleStmt>
+            <publicationStmt>
+               <p>Publication Information</p>
+            </publicationStmt>
+            <sourceDesc>
+               <p>Information about the source</p>
+            </sourceDesc>
+         </fileDesc>
+         <profileDesc>
+            <correspDesc> <!-- Record information about senders and recipients. Not always the same labels, as postcards differ. -->
+               <correspAction type="sent">
+                  <persName>Crescencia Tassano</persName>
+                  <placeName>Uruguay</placeName>
+                  <date when="1908-01-01">1 January 1908</date>
+               </correspAction>
+               <correspAction type="received">
+                  <persName>Petrona C. de Quincoces</persName>
+                  <placeName>Rivera 50, Montevideo, Uruguay</placeName>
+               </correspAction>
+            </correspDesc>
+         </profileDesc>
+      </teiHeader>
+      <facsimile> <!-- images of postcard, both sides plus the thumbnail for s1 -->
+         <surface xml:id="P_deQuincoces_3_1908_s1"> <!-- side 1 image; need xml:id="name_postcard_s1" -->
+            <figure>
+               <label>Postcard to Petrona C. de Quincoces (3) - Front</label> <!-- XX - Front -->
+               <figDesc>Flowers in the foreground and sailboats in the sea in the background; color (hand-coloring) and relief; handwritten text. </figDesc>
+               <graphic xml:id="P_deQuincoces_3_1908_s1_full" url="assets/img/postcards/P_deQuincoces_3_1908_s1.jpeg"/> <!-- _full / needs xml:id and url / image displayed side by side with transcription -->
+               <graphic xml:id="P_deQuincoces_3_1908_s1_thumb" url="assets/img/postcards/P_deQuincoces_3_1908_s1_thumb.jpeg"/> <!-- _thumb/ needs xml:id and url / image used for general overview -->
+            </figure>
+         </surface>
+         <surface xml:id="P_deQuincoces_3_1908_s2"> <!-- side 1 image; need xml:id="name_postcard_s2" -->
+            <figure>
+               <label>Postcard to Petrona C. de Quincoces (3) - Back</label> <!-- XX - back -->
+               <figDesc>Handwritten text: message, recipient and address; two stamps. </figDesc>
+               <graphic xml:id="P_deQuincoces_3_1908_s2_full" url="assets/img/postcards/P_deQuincoces_3_1908_s2.jpeg"/> <!-- _full / needs xml:id and url / image displayed side by side with transcription -->
+            </figure>
+         </surface>
+      </facsimile>
+      <text>
+         <!-- content of first postcard -->
+         <body>
+            <div type="page" facs="#P_deQuincoces_3_1908_s1"> <!-- type and facs / Trascribed text - side 1. When link, in @type, page or postcard/side? -->
+               <p>1 – 1 – 1.908 
+                  
+                  Crescencia Tassano
+               </p>
+            </div> 
+            <div type="page" facs="#P_deQuincoces_3_1908_s2"> <!-- type and facs / Transcribed text - side 2 -->
+               <p>Que Dios envie á la
+                  tierra un sinnumeros de
+                  felicidades para su muy
+                  querida y apreciable
+                  existencia son los mas
+                  vivos deseos de su ahijada
+                  la que la besa y abr
+                  aza con efucion
+                  Crescencia
+                  
+                  Señora
+                  Petrona C de Quincoces
+                  Calle Rivera Chica N°50
+                  Montevideo
+               </p>
+            </div> 
+         </body>
+      </text>
+   </TEI>
+   <TEI xml:id="P_Grand_1907"> <!-- postcard n19-->
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>Postcard to Paula Grand</title>
+            </titleStmt>
+            <publicationStmt>
+               <p>Publication Information</p>
+            </publicationStmt>
+            <sourceDesc>
+               <p>Information about the source</p>
+            </sourceDesc>
+         </fileDesc>
+         <profileDesc>
+            <correspDesc> <!-- Record information about senders and recipients. Not always the same labels, as postcards differ. -->
+               <correspAction type="sent">
+                  <persName>Rosa Luraschi</persName>
+                  <placeName>Uruguay</placeName>
+                  <date when="1907-01-01">1 January 1907</date>
+               </correspAction>
+               <correspAction type="received">
+                  <persName>Paula Grand</persName>
+                  <placeName>Montevideo, Uruguay</placeName>
+               </correspAction>
+            </correspDesc>
+         </profileDesc>
+      </teiHeader>
+      <facsimile> <!-- images of postcard, both sides plus the thumbnail for s1 -->
+         <surface xml:id="P_Grand_1907_s1"> <!-- side 1 image; need xml:id="name_postcard_s1" -->
+            <figure>
+               <label>Postcard to Paula Grand - Front</label> <!-- XX - Front -->
+               <figDesc>A dove carrying a letter (pasted) and blue flowers; color and relief; handwritten and printed text.</figDesc>
+               <graphic xml:id="P_Grand_1907_s1_full" url="assets/img/postcards/P_Grand_1907_s1.jpeg"/> <!-- _full / needs xml:id and url / image displayed side by side with transcription -->
+               <graphic xml:id="P_Grand_1907_s1_thumb" url="assets/img/postcards/P_Grand_1907_s1_thumb.jpeg"/> <!-- _thumb/ needs xml:id and url / image used for general overview -->
+            </figure>
+         </surface>
+         <surface xml:id="P_Grand_1907_s2"> <!-- side 1 image; need xml:id="name_postcard_s2" -->
+            <figure>
+               <label>Postcard to Paula Grand - Back</label> <!-- XX - back -->
+               <figDesc>Handwritten text: recipient and address; one stamp.</figDesc>
+               <graphic xml:id="P_Grand_1907_s2_full" url="assets/img/postcards/P_Grand_1907_s2.jpeg"/> <!-- _full / needs xml:id and url / image displayed side by side with transcription -->
+            </figure>
+         </surface>
+      </facsimile>
+      <text>
+         <!-- content of first postcard -->
+         <body>
+            <div type="page" facs="#P_Grand_1907_s1"> <!-- type and facs / Trascribed text - side 1. When link, in @type, page or postcard/side? -->
+               <p>Enero 1
+                  De 1907
+                  
+                  Muchas 
+                  *Felicidades*
+                  te desea en el
+                  dia de hoy tu
+                  amiga
+                  Rosa Luraschi
+               </p>
+            </div> 
+            <div type="page" facs="#P_Grand_1907_s2"> <!-- type and facs / Transcribed text - side 2 -->
+               <p>Sta
+                  Paula Grand
+                  Ciudad
+               </p>
+            </div> 
+         </body>
+      </text>
+   </TEI>
+   <TEI xml:id="V_Magallanes_1904"> <!-- postcard n20 -->
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>Postcard to Vicente Magallanes</title>
+            </titleStmt>
+            <publicationStmt>
+               <p>Publication Information</p>
+            </publicationStmt>
+            <sourceDesc>
+               <p>Information about the source</p>
+            </sourceDesc>
+         </fileDesc>
+         <profileDesc>
+            <correspDesc> <!-- Record information about senders and recipients. Not always the same labels, as postcards differ. -->
+               <correspAction type="sent">
+                  <persName>José Salgado</persName>
+                  <placeName>Uruguay</placeName>
+                  <date when="1904-03">March 1904</date>
+               </correspAction>
+               <correspAction type="received">
+                  <persName>Vicente Magallanes</persName>
+                  <placeName>Avenida de la Paz, Montevideo, Uruguay</placeName>
+               </correspAction>
+            </correspDesc>
+         </profileDesc>
+      </teiHeader>
+      <facsimile> <!-- images of postcard, both sides plus the thumbnail for s1 -->
+         <surface xml:id="V_Magallanes_1904_s1"> <!-- side 1 image; need xml:id="name_postcard_s1" -->
+            <figure>
+               <label>Postcard to Vicente Magallanes - Front</label> <!-- XX - Front -->
+               <figDesc>Victor Hugo themed postcard: his portrait and house; color; handwritten text; part of a stamp.</figDesc>
+               <graphic xml:id="V_Magallanes_1904_s1_full" url="assets/img/postcards/V_Magallanes_1904_s1.jpeg"/> <!-- _full / needs xml:id and url / image displayed side by side with transcription -->
+               <graphic xml:id="V_Magallanes_1904_s1_thumb" url="assets/img/postcards/V_Magallanes_1904_s1_thumb.jpeg"/> <!-- _thumb/ needs xml:id and url / image used for general overview -->
+            </figure>
+         </surface>
+         <surface xml:id="V_Magallanes_1904_s2"> <!-- side 1 image; need xml:id="name_postcard_s2" -->
+            <figure>
+               <label>Postcard to Vicente Magallanes - Back</label> <!-- XX - back -->
+               <figDesc>Handwritten text: recipient and address; one stamp and part of another stamp. </figDesc>
+               <graphic xml:id="V_Magallanes_1904_s2_full" url="assets/img/postcards/V_Magallanes_1904_s2.jpeg"/> <!-- _full / needs xml:id and url / image displayed side by side with transcription -->
+            </figure>
+         </surface>
+      </facsimile>
+      <text>
+         <!-- content of first postcard -->
+         <body>
+            <div type="page" facs="#V_Magallanes_1904_s1"> <!-- type and facs / Trascribed text - side 1. When link, in @type, page or postcard/side? -->
+               <p>Victor Hugo fué un gigante de
+                  aquellos que él mismo clasifi
+                  có de hombres océanos. después
+                  de haberlo contemplado todo
+                  hombre tiene que confesar
+                  que no hay tempestades
+                  mas grandiosas que
+                  las que agitan sus
+                  ondas ni tintas mas dulces que las
+                  que ostenta su superficie en las horas fugaces
+                  de la calma.
+                  José Salgado 
+               </p>
+            </div> 
+            <div type="page" facs="#V_Magallanes_1904_s2"> <!-- type and facs / Transcribed text - side 2 -->
+               <p>Sr *M*ayor Vicente Magallanes
+                  Avenida de la Paz entre
+                  Río Negro y O. del Plata (B. 13 de G. Nacionales)
+                  Ciudad
+               </p>
+            </div> 
+         </body>
+      </text>
+   </TEI>
+</teiCorpus>
